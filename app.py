@@ -6,10 +6,12 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
-# Download resources untuk NLTK jika belum di-download
+# Download resources untuk NLTK
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
+nltk.download('punkt_tab')
+
 
 # Fungsi untuk membersihkan teks
 def cleaning_text(text):
