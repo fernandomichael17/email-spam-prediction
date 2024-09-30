@@ -40,13 +40,13 @@ def cleaning_text(text):
 model = joblib.load('spam_classifier_model.pkl')
 vectorizer = joblib.load('tfidf_vectorizer.pkl')
 
-# Antarmuka Streamlit
+# Streamlit Interface
 st.title("Email Spam Detection")
 
-# Menampilkan gambar (path gambar harus sesuai)
+# Menampilkan gambar
 st.image("email_spam_image.png", use_column_width=True)
 
-# Membuat input untuk email yang akan diuji
+# Membuat input untuk email
 email_input = st.text_area("Masukkan teks email di sini:", height=200)
 
 # Tombol untuk memulai prediksi
